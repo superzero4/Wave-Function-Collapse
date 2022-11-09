@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f9f0c7df201e840ace940c6e573ac2, type: 3}
   m_Name: SmartNSSettings
   m_EditorClassIdentifier: 
-  m_ScriptRoot: Assets
-  m_NamespacePrefix: 
+  m_ScriptRoot: Assets/Scripts
+  m_NamespacePrefix: superzero4.WFC
   m_UniversalNamespace: 
-  m_IndentUsingSpaces: 1
+  m_IndentUsingSpaces: 0
   m_NumberOfSpaces: 4
   m_UpdateNamespacesWhenMovingScripts: 1
   m_DirectoryIgnoreList: 
-  m_EnableDebugLogging: 0
+  m_EnableDebugLogging: 1
