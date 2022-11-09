@@ -1,0 +1,24 @@
+# Changelog 
+
+## [2.0.2]
+ - [Changed] Removed some unnecessary default values from SmartNSSettings.asset.
+
+## [2.0.1]
+ - [Added] (Experimental) Option to auto-correct namespace when moving a script from one directory to another.
+ - [Added] Opening the Bulk Namespace Conversion utility will now pre-select the directory of the currently selected asset.
+ - [Added] (Experimental) Added an Ignore list to prevent SmartNS from operating on files in specific directories.
+ - [Removed] It seems that moving files from Assets to other directories automatically was causing some errors. That's no longer a feature.
+
+## [2.0.0]
+ - [Added] (Experimental) Added Bulk Namespace Conversion utility. This will add or update namespaces on existing scripts to match your current SmartNS settings.
+
+## [1.6.0]
+ - [Added] Optional "Experimental" Default Script Creation Directory. If a script is created directly within Assets, instead move it to the specified directory. 
+ - [Changed] Fixed an issue where creating a script in a directory "above" the script root would previously not trim off any of the path. Now, it trims off as much as it can. For example, if the Script Root is set to "Assets/A/B/C", and you create a script in "Assets/A", it will remove the "Assets/A" from the namespace.
+ - [Fixed] Fixed a bug where partial paths elements would be removed from namespaces inappropriately. For example, if Script Root was "Assets/A", and you created a script in "Assets/ABC", the namespace used to become "BC" (where "Assets/A" was removed from "Assets/ABC", leaving just "BC".) This has been fixed to require an exact match on each of the path elements.
+
+## [1.5.0] 
+ - [Changed] Proper support for Unity 2019 preferences
+ - [Changed] Now supports placing SmartNS scripts/assets wherever you want in your project, instead of directly under 'Assets'
+ - [Fixed] Now properly detects line endings used in the C# templates, and uses those, resulting in (hopefully) consistent line endings.
+ - [Fixed] Fixed a bug where files created with directories whose name started with a number (for example, "3rd Party") would result in invalid namespace.
